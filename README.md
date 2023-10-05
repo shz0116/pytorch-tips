@@ -15,4 +15,6 @@ m = nn.LogSoftmax(dim=1)
 loss2(m(input), target)                     
 
 ## How is Pytorch’s binary_cross_entropy_with_logits function related to sigmoid and binary_cross_entropy
+F.sigmoid + F.binary_cross_entropy = F.binary_cross_entropy_with_logits
+
 https://zhang-yang.medium.com/how-is-pytorchs-binary-cross-entropy-with-logits-function-related-to-sigmoid-and-d3bd8fb080e7
