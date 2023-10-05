@@ -1,5 +1,7 @@
 # Pytorch Tips:
 ## difference between NLLLoss and CrossEntropyLoss:
+CrossEntropyLoss is equivalent to applying LogSoftmax on an input, followed by NLLLoss.   
+
 Fundamentally same.   
 For CrossEntropyLoss: log(softmax(inputs))   
 For NLLLoss:  nn.LogSoftmax(inputs)     
